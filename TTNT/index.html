@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Face Mask Recognition</title>
+    </head>
+    <!-- CSS -->
+<style>
+    #my_camera{
+     width: 320px;
+     height: 240px;
+     border: 1px solid black;
+    }
+    .no-mask{
+        border: 5px solid red;
+    }
+    .mask{
+        border: 5px solid green;
+    }
+    #test-img{
+        top: 10%;
+        left: 10%;
+    }
+    </style>
+    <body>
+        <div id="my_camera"></div>
+        <input type=button value="Take Snapshot" onClick="myFunction()">
+        
+        <div id="results" ></div>
+        <div class="train-images" style="display: none;"> </div>
+
+        
+        
+
+    </body>
+    
+     
+    <!-- Webcam.min.js -->
+    <script type="text/javascript" src="webcamjs/webcam.min.js"></script>
+    <!-- Load TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <!-- Load MobileNet -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <!-- Load KNN Classifier -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+        
+    <!-- Configure a few settings and attach camera -->
+    <script language="javascript" src="script.js">
+    
+
+</script>
+</html>
